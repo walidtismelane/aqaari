@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>AQAARI | التطبيق العقاري</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#8F4113;--secondary:#0ea5e9;--dark:#0f172a;--light:#f8fafc;}
+body{margin:0;font-family:'Cairo',sans-serif;background:var(--light);color:var(--dark)}
+.container{max-width:1200px;margin:auto;padding:0 20px}
+
+/* NAV */
+nav{background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.08);position:fixed;width:100%;z-index:10}
+.navbar{display:flex;justify-content:space-between;align-items:center;height:70px}
+.navbar a{margin:0 12px;color:#111;font-weight:700;text-decoration:none}
+.navbar a:hover{color:var(--primary)}
+
+/* HERO */
+.hero{background:linear-gradient(130deg,var(--primary),var(--secondary));padding:140px 0 90px;color:#fff}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:44px}
+.btn{background:#fff;color:var(--primary);padding:14px 30px;border-radius:20px;font-weight:800;text-decoration:none;display:inline-block;margin-top:15px}
+
+/* SECTIONS */
+.section{padding:80px 0}
+.title{text-align:center;font-size:34px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#fff;padding:25px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+
+/* DOWNLOAD */
+.download{background:#eef2f7;text-align:center}
+.qr-box{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.qr-card{background:#fff;padding:20px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+
+/* CONTACT */
+.contact form{max-width:500px;margin:auto}
+input,textarea{width:100%;padding:14px;margin:10px 0;border-radius:12px;border:1px solid #ccc}
+
+/* FOOTER */
+footer{text-align:center;padding:20px;background:#020617;color:#aaa}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;text-align:center}}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container navbar">
+<div class="logo">
+  <img src="aqaari.png" alt="">
+</div>
+<style>
+    .logo img{
+  height:90px;
+  object-fit:contain;
+}
+</style>
+
+<div>
+<a href="#about">من نحن</a>
+<a href="#services">الخدمات</a>
+<a href="#download">تحميل التطبيق</a>
+<a href="#contact">اتصل بنا</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<h1>اعثر على عقارك بثقة وسهولة</h1>
+<p>منصة عقارية رقمية ذكية تجمعك مباشرة مع المالكين والوسطاء، وتمنحك تجربة بحث آمنة وسلسة.</p>
+<a href="#download" class="btn">حمّل التطبيق الآن</a>
+</div>
+<img src="1_eng.jpg" style="width:50%;border-radius:30px;justify-self: center;">
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+<h2 class="title">2️⃣ لماذا منصتنا؟</h2>
+<div class="grid">
+<div class="card">🔍 بحث متقدم حسب الموقع، السعر، المساحة ونوع العقار</div>
+<div class="card">🔒 إعلانات موثوقة للحد من الاحتيال</div>
+<div class="card">📍 عرض العقارات عبر الخريطة</div>
+<div class="card">💬 تواصل مباشر وآمن مع المعلنين</div>
+<div class="card">📱 تجربة استخدام سهلة وسريعة</div>
+</div>
+</div>
+</section>
+<section class="pro-features">
+  <h2>ماذا نقدم لك؟</h2>
+  <div class="pro-features-grid">
+    <div>⚡ نشر إعلانك خلال دقائق</div>
+    <div>🌍 الوصول لآلاف الباحثين عن عقار</div>
+    <div>📊 مقارنة العروض بوضوح</div>
+    <div>⏱️ توفير الوقت والجهد</div>
+  </div>
+</section>
+
+<section class="pro-steps">
+  <h2>كيف يعمل التطبيق؟</h2>
+  <div class="pro-steps-grid">
+    <div><span>1</span> حمّل التطبيق</div>
+    <div><span>2</span> ابحث باستخدام الخريطة والفلاتر</div>
+    <div><span>3</span> تواصل مع صاحب العقار</div>
+    <div><span>4</span> اختر بثقة</div>
+  </div>
+</section>
+
+<section class="pro-consult">
+  <h2>خدمة الاستشارة العقارية</h2>
+  <p>قرارك العقاري... خذه بثقة كاملة.</p>
+  <div class="pro-consult-list">
+    <div>✔️ تفادي المخاطر القانونية</div>
+    <div>✔️ فهم العقود</div>
+    <div>✔️ تقييم السعر الحقيقي</div>
+    <div>✔️ قرارات مبنية على بيانات</div>
+  </div>
+  <a class="pro-consult-btn" href="#">اطلب استشارة الآن</a>
+</section>
+
+<section class="pro-audience">
+  <h2>لمن هذه المنصة؟</h2>
+  <div class="pro-audience-grid">
+    <div>🧑‍💼 الأفراد</div>
+    <div>🏢 الوكالات العقارية</div>
+    <div>🏗️ المستثمرون</div>
+    <div>👨‍👩‍👧‍👦 العائلات</div>
+  </div>
+</section>
+
+<section class="pro-trust">
+  <h2>الثقة والشفافية</h2>
+  <div class="pro-trust-grid">
+    <div>🔍 مراقبة الإعلانات</div>
+    <div>🔐 حماية البيانات</div>
+    <div>🤝 شفافية كاملة</div>
+    <div>🚫 منع العروض الوهمية</div>
+  </div>
+</section>
+<style>.pro-features{
+  padding:90px 10%;
+  background:linear-gradient(135deg,#f8fafc,#eef2ff);
+}
+.pro-features-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+}
+.pro-features-grid div{
+  background:#fff;
+  padding:22px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.06);
+}
+
+.pro-steps{
+  padding:90px 10%;
+}
+.pro-steps-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.pro-steps-grid div{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  padding:25px;
+  border-radius:18px;
+}
+.pro-steps-grid span{
+  display:inline-block;
+  background:#2563eb;
+  color:#fff;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  text-align:center;
+  line-height:32px;
+  margin-left:8px;
+}
+
+.pro-consult{
+  padding:90px 10%;
+  background:#1e293b;
+  color:#fff;
+}
+.pro-consult-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.pro-consult-btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 32px;
+  background:#38bdf8;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+.pro-audience{
+  padding:90px 10%;
+}
+.pro-audience-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.pro-audience-grid div{
+  background:#f1f5f9;
+  padding:20px;
+  border-radius:16px;
+  text-align:center;
+}
+
+.pro-trust{
+  padding:90px 10%;
+  background:#f8fafc;
+}
+.pro-trust-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.pro-trust-grid div{
+  background:#fff;
+  padding:22px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.pro-cta{
+  padding:100px 10%;
+  background:linear-gradient(135deg,#2563eb,#38bdf8);
+  text-align:center;
+  color:#fff;
+}
+.pro-cta-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 45px;
+  background:#fff;
+  color:#2563eb;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:700;
+}
+</style>
+<section class="pro-cta">
+  <h2>ابدأ رحلتك العقارية الآن</h2>
+  <p>منصة ذكية تمنحك أفضل تجربة عقارية.</p>
+  <a href="#" class="pro-cta-btn">حمّل التطبيق</a>
+</section>
+
+
+
+<section class="section download" id="download">
+<div class="container">
+<h2 class="title">حمّل التطبيق الآن</h2>
+<div class="qr-box">
+<div class="qr-card">
+<h3>Android</h3>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://play.google.com" />
+</div>
+<div class="qr-card">
+<h3>iOS</h3>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.apple.com/app-store/" />
+</div>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="container">
+<h2 class="title">اتصل بنا</h2>
+<form>
+<input type="text" placeholder="الاسم الكامل">
+<input type="email" placeholder="البريد الإلكتروني">
+<textarea rows="4" placeholder="رسالتك"></textarea>
+<button class="btn">إرسال</button>
+</form>
+</div>
+</section>
+
+<footer>
+© 2025 AQARI APP جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
